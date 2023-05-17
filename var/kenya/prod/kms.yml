@@ -11,7 +11,7 @@ users:
 
  - username: Nilesh
    comment: "SRE"
-   state:"Absent"   
+   state:"Present"   
     
     
 previleges:
