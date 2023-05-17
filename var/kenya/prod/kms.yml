@@ -1,0 +1,17 @@
+db:
+ name: smartcook
+ host: "example.com"
+ user: "smartcook"
+ port: 51515
+ 
+users:
+  - username: abc
+    comment: "PSE"
+    state:"present"
+    
+    
+previleges:
+  - username: xyz
+    tables: customer, employee
+    grants: SELECT
+    state: present
