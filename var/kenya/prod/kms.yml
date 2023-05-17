@@ -7,7 +7,11 @@ db:
 users:
   - username: abc
     comment: "PSE"
-    state:"present"
+    state:"absent"
+
+ - username: Nilesh
+   comment: "SRE"
+   state:"present"   
     
     
 previleges:
