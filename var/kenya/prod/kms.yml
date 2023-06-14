@@ -5,10 +5,6 @@ db:
  port: 51515
  
 users:
-  - username: abc
-    comment: "PSE"
-    state:"Present"
-
  - username: Nilesh
    comment: "SRE"
    state:"absent"   
