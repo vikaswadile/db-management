@@ -13,13 +13,26 @@ country=$country_name
 env=$env_name
 commit_reason=$reason
 
-echo "--------------------------------------------------"
+if [ -d "db-management" ]; then
+  cd db-management
+  # pull the latest changes from the remote branch
+
+echo "Repository already exist locally, pulling latest changes from remote repository"
+
+  git pull origin main
+  cd ../db-management/var/${country}/${env}/
+
+else
+  # clone the repository
+
 echo "Cloning remote repository to local !"
-echo "--------------------------------------------------"
-sleep 1
+
+sleep 2
 
   git clone git@github.com:vikaswadile/db-management.git
   cd db-management/var/${country}/${env}/
+fi
+
 
 echo "--------------------------------------------------"
 echo "Below is the present working directory"
