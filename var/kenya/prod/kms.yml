@@ -7,7 +7,7 @@ db:
 users:
  - username: Nilesh
    comment: "SRE"
-   state:"absent"   
+   state:"present"   
     
     
 previleges:
