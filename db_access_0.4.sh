@@ -57,12 +57,6 @@ echo "--------------------------------------------------"
 
 pwd
 
-directory=$(pwd)
-
-
-files=$(ls "$directory")
-
-
 #listing files present in the directory
 sleep 1
 echo "--------------------------------------------------"
