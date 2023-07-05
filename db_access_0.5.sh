@@ -72,7 +72,7 @@ sleep 1
 echo "--------------------------------------------------"
 while [[ -z $file_names ]]; do
     echo "Enter file name (if multiple files please enter names space separated): "
-    read -p "reason : " file_names
+    read -p "file_names : " file_names
 done
 echo "--------------------------------------------------"
 
@@ -158,7 +158,10 @@ if [ $? -ne 0 ]; then
     
     read -p "Do you want to re-execute this script to avoid conflicts? (yes/no): " retry_choice
     if [ "$retry_choice" == "yes" ] || [ "$retry_choice" == "Yes" ]; then
-      exec "$0"
+    cd ../../../../
+    rm -rf db-management
+    ./db_access_v0.5.sh
+
     else
       exit 1
     fi
