@@ -43,7 +43,7 @@ if [ -d "db-user-management" ]; then
   echo "Repository already exist locally, pulling latest changes from remote repository"
   echo "--------------------------------------------------"
   git pull origin main
-  cd ../db-user-management/mes/${country}/${env}/
+  cd ../db-user-management/vars/${country}/${env}/
 
 else
   # clone the repository
